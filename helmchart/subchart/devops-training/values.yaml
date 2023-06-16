@@ -1,0 +1,19 @@
+api: 
+  replicaCount: 3
+
+  image:
+    repository: altinhykolli/api
+    pullPolicy: Always
+    # Overrides the image tag whose default is the chart appVersion.
+    tag: "latest"
+    containerPort: 3000
+
+web: 
+  replicaCount: 2
+
+  image:
+    repository: altinhykolli/web
+    pullPolicy: Always
+    # Overrides the image tag whose default is the chart appVersion.
+    tag: "latest"
+    containerPort: 3000
